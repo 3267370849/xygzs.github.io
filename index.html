@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta name="msvalidate.01" content="20BCF37FE7EEF2812C1EE2DBFFB4C6D5" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>生死狙击逍遥工作室，欢迎您！</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ya&skin=pitaya" frameborder="0" width="320" height="200" allowtransparency="true"></iframe>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>评论区留言</title>
+    <style type="text/css">
+        .div1,div{
+            width: 1350px;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="div1">
+        <!-- 创建昵称和留言文本框 -->
+        <span>昵称：</span><input type="text" id="user" name="user">
+        <br>
+        <span>留言：</span><textarea id="lang"></textarea><br>
+        <!-- 创建提交评价按钮 -->
+        <input type="button" value="提交评价" id="btn">
+    </div>
+</body>
+<script type="text/javascript">
+    //通过id属性查找标签节点
+    var user=document.getElementById('user');
+    var lang=document.getElementById('lang');
+    //通过id属性查找提交评价按钮并绑定点击事件
+    document.getElementById('btn').onclick=function(){
+        //在html代码中创建一个div盒子
+        var cont=document.createElement('div');
+        //将获取到的数据，放到一创建好的盒子中
+        cont.innerHTML='<p>'+user.value+':'+lang.value+'</p><hr>';
+        //将创建好的div盒子及及内容显示在页面中
+        document.getElementById('div1').appendChild(cont);
+        user.value='';
+        lang.value='';
+    }
+</script>
+</html>
+   
+
+</head>
+
+<body>
+    <!--mouse effects show start-->
+<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("❤富强❤","❤民主❤","❤文明❤","❤和谐❤","❤自由❤","❤平等❤","❤公正❤","❤法治❤","❤爱国❤","❤敬业❤","❤诚信❤","❤友善❤");
+        var $i = $("<span></span>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 99999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"//颜色随机
+            //"#2299DD"  //固定颜色
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+<!--mouse effects show end-->
+
+    <section class="content">
+        <div class="box">
+            <!-- 头像 123456替换你的QQ即可获取你的QQ头像 -->
+            <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3144489062&amp;spec=100" alt="">
+            <!-- 名称 -->
+            <h2>欢迎来到逍遥工作室！</h2>
+            <!-- 售后 -->
+            <div class="as">
+                <p>添加好友QQ3144489062</p>
+                <p>备用QQ:2967035973</p>
+                <p>WX:17359840410</p>
+            </div>
+            <!-- 超链接 -->
+            <ul class="site">
+                <li><a href="https://gw27285708.icoc.ws/signup.jsp" target="_blank" rel="noopener noreferrer">下载官网</a></li>
+                <li><a href="https://wpa.qq.com/msgrd?v=3&uin=3144489062&site=qq&menu=yes&jumpflag=1" target="_blank" rel="noopener noreferrer">个人主页</a></li>
+                <li><a href="https://www.douyin.com/user/MS4wLjABAAAA5MjAa_KppBesDSW4Ush7aK8oE2rI43-oDtXK7FtcEC8" target="_blank" rel="noopener noreferrer">抖音</a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="flexible.js"></script>
+    <!-- 音乐播放器代码 -->
+    <script id="xplayer" src="https://music.xfyun.club/Static/player11/js/player.js" key="636f64f9bc7e7" m = "1"></script>
+</body>
+
+</html>
+
